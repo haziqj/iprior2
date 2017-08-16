@@ -1,13 +1,22 @@
 Package: iprior2
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Regression Modelling using I-Priors
+Version: 0.1.0.9000
+Authors@R: person("Haziq", "Jamil", email = "haziq.jamil@gmail.com",
+                  role = c("aut", "cre"))
+Description: Fit I-prior models using a variety of estimation methods.
+URL: https://github.com/haziqjamil/iprior2
+License: GPL (>= 3.0) | file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: Rcpp (>= 0.12.12)
+Imports: 
+  tidyverse,
+  Rcpp (>= 0.12.12),
+  reshape2
 LinkingTo: Rcpp
+Suggests:
+  knitr,
+  rmarkdown,
+  testthat
+BugReports: https://github.com/haziqjamil/iprior2/issues
+RoxygenNote: 6.0.1
